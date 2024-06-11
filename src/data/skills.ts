@@ -1,44 +1,49 @@
 import {
   SiExpress,
-  SiSocketdotio,
-  SiPrisma,
+  // SiSocketdotio,
+  // SiPrisma,
   SiNextdotjs,
-  SiFlask,
+  // SiFlask,
 } from "react-icons/si";
 import {
-  FramerMotionIcon,
+  // FramerMotionIcon,
   ReactRouterDomIcon,
-  VitePwaIcon,
+  // VitePwaIcon,
 } from "@/components/icons";
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
 // Languages
 import HtmlSvg from "@/public/icons/html.svg";
 import CsssSvg from "@/public/icons/css.svg";
-import SassSvg from "@/public/icons/sass.svg";
+// import SassSvg from "@/public/icons/sass.svg";
 import JavascriptSvg from "@/public/icons/javascript.svg";
 import TypescriptSvg from "@/public/icons/typescript.svg";
-import PythonSvg from "@/public/icons/python.svg";
+// import PythonSvg from "@/public/icons/python.svg";
+import CSharpSvg from "@/public/icons/CSharp.svg";
 
 // Libraries
 import ReactjsSvg from "@/public/icons/reactjs.svg";
-import SolidjsSvg from "@/public/icons/solidjs.svg";
+import BootstrapSvg from "@/public/icons/Bootstrap.svg";
+// import SolidjsSvg from "@/public/icons/solidjs.svg";
 import ReduxSvg from "@/public/icons/redux.svg";
-import TailwindcssSvg from "@/public/icons/tailwindcss.svg";
+// import TailwindcssSvg from "@/public/icons/tailwindcss.svg";
 import MuiSvg from "@/public/icons/mui.svg";
-import ViteSvg from "@/public/icons/vite.svg";
+// import ViteSvg from "@/public/icons/vite.svg";
 
 // Backend
 import NodejsSvg from "@/public/icons/nodejs.svg";
+import AspDotnetSvg from "@/public/icons/Dot.NET_Core.svg";
 
 // Database and ORMS
 import MongoDBSvg from "@/public/icons/mongodb.svg";
 import PostgressSvg from "@/public/icons/postgresql.svg";
+import SqlServerSvg from "@/public/icons/Sql-server.svg";
 
 // Tools and Tech
 import GitSvg from "@/public/icons/git.svg";
 import DockerSvg from "@/public/icons/docker.svg";
-import AwsSvg from "@/public/icons/aws.svg";
+// import AwsSvg from "@/public/icons/aws.svg";
+import AzureSvg from "@/public/icons/Azure.svg";
 import PostmanSvg from "@/public/icons/postman.svg";
 
 export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
@@ -53,10 +58,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "CSS",
         icon: CsssSvg,
       },
-      {
-        name: "SASS",
-        icon: SassSvg,
-      },
+      // {
+      //   name: "SASS",
+      //   icon: SassSvg,
+      // },
       {
         name: "Javascript",
         icon: JavascriptSvg,
@@ -65,9 +70,13 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Typescript",
         icon: TypescriptSvg,
       },
+      // {
+      //   name: "Python",
+      //   icon: PythonSvg,
+      // },
       {
-        name: "Python",
-        icon: PythonSvg,
+        name: "C Sharp",
+        icon: CSharpSvg,
       },
     ],
   },
@@ -83,9 +92,13 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: SiNextdotjs,
       },
       {
-        name: "Solidjs",
-        icon: SolidjsSvg,
+        name: "Bootstrap",
+        icon: BootstrapSvg,
       },
+      // {
+      //   name: "Solidjs",
+      //   icon: SolidjsSvg,
+      // },
       {
         name: "React Router Dom",
         icon: ReactRouterDomIcon,
@@ -94,26 +107,26 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Redux",
         icon: ReduxSvg,
       },
-      {
-        name: "Tailwindcss",
-        icon: TailwindcssSvg,
-      },
+      // {
+      //   name: "Tailwindcss",
+      //   icon: TailwindcssSvg,
+      // },
       {
         name: "MUI",
         icon: MuiSvg,
       },
-      {
-        name: "Framer motion",
-        icon: FramerMotionIcon,
-      },
-      {
-        name: "Vite",
-        icon: ViteSvg,
-      },
-      {
-        name: "Vite PWA",
-        icon: VitePwaIcon,
-      },
+      // {
+      //   name: "Framer motion",
+      //   icon: FramerMotionIcon,
+      // },
+      // {
+      //   name: "Vite",
+      //   icon: ViteSvg,
+      // },
+      // {
+      //   name: "Vite PWA",
+      //   icon: VitePwaIcon,
+      // },
     ],
   },
   {
@@ -128,13 +141,17 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: SiExpress,
       },
       {
-        name: "Socket.io",
-        icon: SiSocketdotio,
+        name: "Asp.net Core",
+        icon: AspDotnetSvg,
       },
-      {
-        name: "Flask",
-        icon: SiFlask,
-      },
+      // {
+      //   name: "Socket.io",
+      //   icon: SiSocketdotio,
+      // },
+      // {
+      //   name: "Flask",
+      //   icon: SiFlask,
+      // },
     ],
   },
   {
@@ -149,9 +166,13 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: PostgressSvg,
       },
       {
-        name: "Prisma",
-        icon: SiPrisma,
+        name: "SQL Server",
+        icon: SqlServerSvg,
       },
+      // {
+      //   name: "Prisma",
+      //   icon: SiPrisma,
+      // },
     ],
   },
   {
@@ -166,9 +187,13 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: DockerSvg,
       },
       {
-        name: "AWS",
-        icon: AwsSvg,
+        name: "Azure",
+        icon: AzureSvg,
       },
+      // {
+      //   name: "AWS",
+      //   icon: AwsSvg,
+      // },
       {
         name: "Postman",
         icon: PostmanSvg,

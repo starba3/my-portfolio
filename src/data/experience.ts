@@ -2,35 +2,35 @@ import { type ExperienceShowcaseListItemProps } from "@/components/experience/ex
 
 export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
   {
-    title: "Reactjs Frontend Developer",
+    title: "DotNet Developers",
     organisation: {
-      name: "Skima",
-      href: "https://skima.ai/",
+      name: "Link Solutions",
+      href: "https://Link.sa/",
     },
-    date: "Oct 2023 - Present",
+    date: "july 2023 - Present",
     location: "Mumbai",
     description: "Reactjs and Nextjs app development",
   },
   {
-    title: "Engineering Trainee",
+    title: "IOT Developers",
     organisation: {
-      name: "Hexaware",
-      href: "https://hexaware.com/",
+      name: "Marmara For Modern Software",
+      href: "https://marmrasoft.com/",
     },
-    date: "July 2023 - Sep 2023",
-    location: "Remote",
+    date: "Feb 2021 - Jul 2023",
+    location: "On Site",
     description:
-      "Learned to work we monorepo and got to learn application architecture, scalling and build tooling to improve CI/CD of micro services.",
+      "Learned API, System Integeration with PTC Thingworx IOT platform and mobile echosystem.",
   },
   {
-    title: "Frontend Developer Intern",
+    title: "IOT Developers",
     organisation: {
-      name: "Master Infotech",
-      href: "https://masterinfotech.com/",
+      name: "Marmara For Modern Software",
+      href: "https://marmrasoft.com/",
     },
-    date: "Winter - 2022",
-    location: "Remote",
+    date: "Aug 2019 - Aug 2020",
+    location: "On Site",
     description:
-      "Worked on a team responsible for developing new features and updating old codebases to latest technologies. Learned alot about web development and CI/CD development cycle.",
+      "Learned PTC Thingworx IOT platform and the full cycle IOT using .Net c#, windows services, postgres, and system integration with vehicle tracking hardware.",
   },
 ];

@@ -1,42 +1,44 @@
-import { useEffect, useRef, useState } from "react";
+// import { useEffect, useRef, useState } from "react";
 
-import { MailIcon } from "lucide-react";
+import { useState } from "react";
 
-import FloatingMailButton, {
-  floatingMailButtonoptions,
-} from "@/components/contact-form/floating-mail-button";
+// import { MailIcon } from "lucide-react";
+
+// import FloatingMailButton, {
+//   floatingMailButtonoptions,
+// } from "@/components/contact-form/floating-mail-button";
 import ContactFormModal from "@/components/contact-form/contact-form-modal";
 
 export default function ContactButton() {
-  const refSendBtn = useRef<HTMLButtonElement>(null);
+  // const refSendBtn = useRef<HTMLButtonElement>(null);
 
-  const [isBtnVisible, setIsBtnVisible] = useState(false);
+  // const [isBtnVisible, setIsBtnVisible] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
 
-  const observerCallback = (entries: IntersectionObserverEntry[]) => {
-    const [entry] = entries;
-    setIsBtnVisible(!entry.isIntersecting);
-  };
+  // const observerCallback = (entries: IntersectionObserverEntry[]) => {
+  //   const [entry] = entries;
+  //   setIsBtnVisible(!entry.isIntersecting);
+  // };
 
-  useEffect(() => {
-    const btn = refSendBtn.current;
-    const observer = new IntersectionObserver(
-      observerCallback,
-      floatingMailButtonoptions,
-    );
-    if (btn) observer.observe(btn);
-    return () => {
-      if (btn) observer.unobserve(btn);
-    };
-  }, [refSendBtn]);
+  // useEffect(() => {
+  //   const btn = refSendBtn.current;
+  //   const observer = new IntersectionObserver(
+  //     observerCallback,
+  //     floatingMailButtonoptions,
+  //   );
+  //   if (btn) observer.observe(btn);
+  //   return () => {
+  //     if (btn) observer.unobserve(btn);
+  //   };
+  // }, [refSendBtn]);
 
   return (
     <>
-      {isBtnVisible && !isOpenModal && (
+      {/* {isBtnVisible && !isOpenModal && (
         <FloatingMailButton openModal={setIsOpenModal} />
-      )}
+      )} */}
 
-      <button
+      {/* <button
         ref={refSendBtn}
         className="inline-flex items-center gap-2 rounded-md bg-background px-3 py-2 text-accent transition-transform duration-150 focus-within:scale-[1.05] hover:scale-[1.05] hover:bg-foreground hover:text-background"
         onClick={() => setIsOpenModal(true)}
@@ -45,7 +47,7 @@ export default function ContactButton() {
         <span className="text-base font-semibold sm:text-lg lg:text-xl">
           Send Message
         </span>
-      </button>
+      </button> */}
 
       <ContactFormModal showModal={isOpenModal} setShowModal={setIsOpenModal} />
     </>

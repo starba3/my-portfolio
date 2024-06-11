@@ -1,5 +1,6 @@
 import ContactButton from "@/components/contact-form/contact-button";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/icons";
+import { GithubIcon, LinkedinIcon } from "@/components/icons";
+// import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/icons";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function Footer() {
@@ -16,7 +17,7 @@ export default function Footer() {
           target="_blank"
           className="mb-6 cursor-pointer text-center text-2xl font-bold underline sm:text-4xl lg:text-7xl"
         >
-          <span>amitchauhan263871@</span>
+          <span>mustafakhudur.alsamarrai@</span>
           <br />
           <span>gmail.com</span>
         </a>
@@ -35,14 +36,14 @@ export default function Footer() {
           >
             <GithubIcon className="text-accent transition-colors duration-150 hover:text-accent-foreground" />
           </a>
-          <a
+          {/* <a
             href={siteMetadata.twitter}
             target="_blank"
             className="h-6 w-6"
             aria-label="link to Twitter"
           >
             <TwitterIcon className="text-accent transition-colors duration-150 hover:text-accent-foreground" />
-          </a>
+          </a> */}
           <a
             href={siteMetadata.linkedin}
             target="_blank"
